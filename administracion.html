@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/tablaDinamica.css">
+    <title>Administracion de Autos</title>
+</head>
+<body>
+    <header class="portada">
+        <nav>
+          <img src="/imgs/logo.svg" alt="logo de la web">
+          <p>Pisteando (como un campeon)</p>
+          <ul>
+            <li>
+              <a href="/index.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="#Anuncios">Anuncios</a>
+            </li>
+            <li>
+              <a href="#Blog">Blog</a>
+            </li>
+            <li>
+              <a href="#Contacto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <div id="divFormulario">
+            <fieldset>
+                <legend>Información del anuncio</legend>
+                <form class="formulario">
+                    <label for="txtTitulo">Título</label>
+                    <input type="text" name="titulo" id="txtTitulo" >
+                    <small></small>
+                
+    
+                    <label for="radioTransaccion">Transacción</label>
+                    <input type="radio" name="transaccion" id="radioTransaccion" value="alquiler" checked>Alquiler
+                    <input type="radio" name="transaccion" id="radioTransaccion" value="venta">Venta
+                    <small></small>
+                                    
+                    
+                    <label for="txtDescripcion">Descripción</label>
+                    <input type="text" name="descripcion" id="txtDescripcion" >
+                    <small></small>
+                
+                    
+                    <label for="txtPrecio">Precio</label>
+                    <input type="text" name="precio" id="txtPrecio" >
+                    <small></small>
+                
+                    <img src="/imgs/puerta.png" alt="ICONO PUERTA">
+                    <label for="numPuertas">Cantidad de Puertas</label>
+                    <input type="number" name="puertas" id="numPuertas" >                      
+                    <small></small>
+                
+                    <img src="/imgs/kms.png" alt="ICONO KMS">
+                    <label for="numKms">Cantidad de Kms</label>
+                    <input type="number" name="kms" id="numKms" >                      
+                    <small></small>
+                
+                    <img src="/imgs/potencia.png" alt="ICONO POTENCIA">
+                    <label for="numPotencia">Potencia</label>
+                    <input type="number" name="potencia" id="numPotencia" >                      
+                    <small></small>
+                                                     
+                    
+                    <small id="mensajeEnviar"></small>
+                    <input type="submit" value="Guardar" name="btnEnviar" id="btnEnviar">
+                    <input type="reset" value="Borrar Formulario" name="btnReset" id="btnReset">
+                    <button id="btnEliminar">Eliminar Anuncio</button>
+                    <div class="lds-dual-ring" id="spinner"></div>    
+                    
+                </form>
+                
+            </fieldset>
+        </div>            
+        <div class="divTabla"></div>
+
+    </main>
+    <footer>
+      <nav id="footer">
+        <ul>
+          <li>
+            <a href="#Nosotros">Nosotros</a>
+          </li>
+          <li>
+            <a href="#Anuncios">Anuncios</a>
+          </li>
+          <li>
+            <a href="#Blog">Blog</a>
+          </li>
+          <li>
+            <a href="#Contacto">Contacto</a>
+          </li>
+        </ul>
+        <p id ="mensajeFooter">Todos los Derechos Reservados 2019 </p>
+      </nav>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>

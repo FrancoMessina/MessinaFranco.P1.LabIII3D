@@ -1,0 +1,12 @@
+.gris{
+    background-color: rgba(226, 226, 226, 0.942);
+}
+
+.puntero{
+    cursor: pointer;
+}
+
+.centrar {
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+    
+nav {
+    background-color: rgb(54, 111, 168);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+#footer{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 60px;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 30px;
+    
+}
+#mensajeFooter {
+    justify-content: flex-end;
+    
+}
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    list-style: none;
+    }
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    padding: 10px 15px;
+
+}
+
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 85vw;
+    margin-top: 40px;
+}
+
+th {
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: grey; 
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 2px 2px;
+}
+h1 {
+    text-align: center;
+}
+
+#divFormulario {
+    background-color:azure;
+    display: flex;
+    justify-content: center;
+}
+input[type=submit], input[type=reset], button {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    border: none;
+    color: rgb(241, 240, 240);
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration:dashed;
+    font-size: 12px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+legend{
+    font-weight: bold;
+}
+
+.formulario {    
+    padding: 25px;    
+    height: 80vh;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    height: 25px;
+    border: 2px grey solid;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+label {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.inputError {
+    border: 4px solid red;
+    box-shadow: 0 0 5px red;
+}
+
+.inputOk {
+    border: 1px solid green;
+    box-shadow: 0 0 5px green;
+}
+
+.danger {
+    color: red;
+    font-weight: bold;
+}
+
+small {
+    display: block;
+}
+.spinnerVisible {    
+    display: block;
+}
+
+.spinnerHidden {
+    display: none;  
+}
+
+.visible{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}
+#btnEnviar {
+    background-color: green;
+    font-size: 24px;
+    margin: 10px;
+}
+
+#btnReset {
+    background-color: blue;
+    font-size: 24px;
+    margin: 10px;
+}
+
+#btnEliminar {
+    background-color: red;
+    font-size: 24px;
+    margin: 10px;
+}
+.lds-dual-ring {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 25px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid green;
+    border-color: green transparent green transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.portada {
+    background-image: url("../imgs/portada.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.titulo {
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+    text-align: start;
+    text-justify: initial;
+}
+
+img{
+    width: 40px;
+    height: 60px;
+}
